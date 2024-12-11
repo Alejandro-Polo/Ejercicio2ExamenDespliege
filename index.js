@@ -1,8 +1,14 @@
-/* This JavaScript code snippet is setting up an Intersection Observer to add an entrance animation
-effect when scrolling. Here's a breakdown of what it does: */
-// Agregar animación de entrada al desplazarse
+
+
 const productList = document.querySelectorAll('.product');
 
+/**
+ * @param entries - Entradas
+ * @param entry - Elementos de entries
+ * @returns se hace visible
+ * 
+ * recorre un foreach y da una animacion
+ */
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
